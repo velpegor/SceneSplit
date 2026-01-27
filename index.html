@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Jailbreaking on Text-to-Video Models via Scene Splitting Strategy">
+  <meta name="keywords" content="Text-to-Video Model, Safety">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <!-- favicon 제거됨 -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Jailbreaking on Text-to-Video Models via Scene Splitting Strategy</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://velpegor.github.io">Wonjun Lee</a><sup>*1, 2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://aim-intelligence.com/">Haon Park</a><sup>*3</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://doehyeonlee.github.io/">Doehyeon Lee</a><sup>5</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://cvlab.yonsei.ac.kr/">Bumsub Ham</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://kdst.re.kr/">Suhyun Kim</a><sup>4†</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Yonsei University,</span>
+            <span class="author-block"><sup>2</sup>Korea Institute of Science and Technology</span>
+            <span class="author-block"><sup>3</sup>AIM Intelligence</span>  <br>
+            <span class="author-block"><sup>4</sup>Kyung Hee University</span>
+            <span class="author-block"><sup>5</sup>Seoul National University</span>
+          </div>
+
+          <div class="is-size-6 publication-authors">
+            <span class="author-block"><sup>*</sup>Equal Contribution, <sup>†</sup>Corresponding Author</span>
+          </div>
+		
+	<div>
+                <span class="is-size-5 publication-venue">ICLR 2026</span>
+
+        </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://openreview.net/forum?id=iFGFW3sF2M&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DICLR.cc%2F2026%2FConference%2FAuthors%23your-submissions)" 
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Openreview</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2509.22292"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <!-- <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (coming soon)</span>
+                </a>
+              </span>
+              <!-- Dataset Link. -->
+              <!-- <span class="link-block">
+                <a href="https://huggingface.co/datasets/WonjunL/ELITE"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Dataset</span>
+                </a>
+              </span> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+            Along with the rapid advancement of numerous Text-to-Video (T2V) models, growing concerns have emerged regarding their safety risks. While recent studies have explored vulnerabilities in models like LLMs, VLMs, and Text-to-Image (T2I) models through jailbreak attacks, T2V models remain largely unexplored, leaving a significant safety gap. To address this gap, we introduce SceneSplit, a novel black-box jailbreak method that works by fragmenting a harmful narrative into multiple scenes, each individually benign. This approach manipulates the generative output space, the abstract set of all potential video outputs for a given prompt, using the combination of scenes as a powerful constraint to guide the final outcome. While each scene individually corresponds to a wide and safe space where most outcomes are benign, their sequential combination collectively restricts this space, narrowing it to an unsafe region and significantly increasing the likelihood of generating a harmful video. This core mechanism is further enhanced through iterative scene manipulation, which bypasses the safety filter within this constrained unsafe region. Additionally, a strategy library that reuses successful attack patterns further improves the attack's overall effectiveness and robustness. To validate our method, we evaluate SceneSplit across 11 safety categories from T2VSafetyBench on T2V models. Our results show that it achieves a high average Attack Success Rate (ASR) of 77.2% on Luma Ray2, 84.1% on Hailuo, 78.2% on Veo2, 78.6% on Kling v1.0, and 68.6% on Sora2, significantly outperforming the existing baselines. Through this work, we demonstrate that current T2V safety mechanisms are vulnerable to attacks that exploit narrative structure, providing new insights for understanding and improving the safety of T2V models.
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+<section class="section" id="Figure2">
+	<div class="container is-max-desktop">
+	  <div class="columns is-centered">
+		<div class="column is-full-width">
+      <h2 class="title is-3">Key Idea of SceneSplit</h2>
+		  <img src="./static/images/figure2.png" alt="Figure 1" style="width:100%; max-width:1000px;">
+		  <div class="content has-text-justified">
+        The key idea of SceneSplit. (1) A harmful prompt is split into individually benign scenes, lowering its direct harmfulness to bypass safety filters. (2) The combination of individually benign scenes constrains the generative output space into a region where the probability of generating an unsafe video is high. (3) Scene Manipulation then significantly increases the probability of a suc- cessful jailbreak by searching for a bypass within this constrained region.
+      </div>
+		</div>
+	  </div>
+	</div>
+  </section>
+
+<hr style="border: 0; height: 1px; background-color: #e0e0e0; margin: 2rem auto; width: 80%;">
+
+  <section class="section" id="Figure3">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">SceneSplit</h2>
+          <img src="./static/images/figure1.png" alt="Figure 3" style="width:100%; max-width:1000px;">
+          <div class="content has-text-justified">
+            Overall pipeline of SceneSplit. The process consists of three key phases: (1) Scene Splitting, which fragments a harmful prompt into individually benign scenes; (2) Scene Manipulation, which iteratively modifies the most influential scene to bypass safety filters; and (3) Strategy Update, which stores successful patterns in the library for future reuse.
+          </div>
+          <h2 class="title is-5">Key components</h2>
+          <div class="columns is-centered">
+      <div class="content has-text-justified">
+          <ul>
+            <li>
+              <b>(1) Scene Splitting</b>: This initial phase transforms a single harmful prompt into a sequence of multiple, individually benign scenes. It utilizes two key techniques: <i>Scene Division</i>, which fragments the narrative into 2 to 5 procedural stages, and <i>Paraphrasing</i>, which uses gentle language to lower the prompt's direct harmfulness and bypass initial text safety filters.
+            </li>
+            <li>
+              <b>(2) Scene Manipulation</b>: If the initial split fails to bypass visual-level defenses or generate the intended content, this component iteratively modifies the "most influential scene" identified by a Vision Language Model. It performs a bi-directional search—making expressions more explicit if the attack is weak, or more implicit if blocked—to find the optimal attack boundary within the constrained generative space.
+            </li>
+            <li>
+              <b>(3) Strategy Update</b>: This mechanism stores successful attack patterns in a <i>Strategy Library</i> for future reuse. By summarizing successful prompts into reusable strategies, it allows the model to bypass the high variability of initial scene generation, leading to a more robust and efficient attack process across semantically similar prompts.
+            </li>
+          </ul>
+        </div>
+    </div>
+        </div>
+      </div>
+   </section>
+
+  <hr style="border: 0; height: 1px; background-color: #e0e0e0; margin: 2rem auto; width: 80%;">
+
+
+
+  <section class="section" id="Figure3">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Results</h2>
+          <div class="columns is-centered">
+            <div class="column is-half">
+<img src="./static/images/figure4.png" alt="result" 
+     style="width: 150%; max-width: 1000px; display: block; margin: 0 auto; position: relative; left: 50%; transform: translateX(-50%);">            </div>
+          </div>
+          <div class="columns is-centered">
+            <div class="column is-full-width">
+              <div class="content has-text-justified">
+                Examples of unsafe videos generated by SceneSplit on commercial T2V models. Note that unsafe images have been blurred.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- MathJax 라이브러리 추가 -->
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js">
+  </script>
+  
+  
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <img src="./static/images/table.png" alt="Figure 1" style="width:100%; max-width:1000px;">
+      <div class="content has-text-justified">
+Comparison of Attack Success Rate (ASR) on T2V models across 11 safety categories. The 11 categories are as follows: Pornography (1), Borderline Pornography (2), Violence (3), Gore (4), Disturbing Content (5), Discrimination (6), Political Sensitivity (7), Illegal Activities (8), Misinformation (9), Sequential Action Risk (10), and Dynamic Variation Risk (11).	    </div>
+			</div>
+		</div>
+
+
+    <!-- 전체 너비의 설명 문장 -->
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{lee2025jailbreaking,
+  title={Jailbreaking on Text-to-Video Models via Scene Splitting Strategy},
+  author={Lee, Wonjun and Park, Haon and Lee, Doehyeon and Ham, Bumsub and Kim, Suhyun},
+  journal={arXiv preprint arXiv:2509.22292},
+  year={2025}
+}</code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+			Website template borrowed from <a href="https://github.com/nerfies/nerfies.github.io" target="_blank">NeRFies</a>.
+		</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
