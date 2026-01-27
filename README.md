@@ -1,4 +1,4 @@
-# ELITE: Enhanced Language-Image Toxicity Evaluation for Safety
+# Jailbreaking on Text-to-Video Models via Scene Splitting Strategy
 
 
-[[Project Page]](https://velpegor.github.io/ELITE/)
+[[Project Page]](https://velpegor.github.io/SceneSplit/)
