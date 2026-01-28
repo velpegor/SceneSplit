@@ -10,7 +10,7 @@ Along with the rapid advancement of numerous Text-to-Video (T2V) models, growing
 
 ## Overview
 
-![Overview](figs/fig1.png)
+<img src="figs/fig1.png" width="100%">
 
 ## Code
 
