@@ -10,7 +10,7 @@ Along with the rapid advancement of numerous Text-to-Video (T2V) models, growing
 
 ## Overview
 
-![Overview](figs/overview.png)
+![Overview](figs/fig1.png)
 
 ## Code
 
