@@ -6,8 +6,8 @@ This is the official repository for the paper **"Jailbreaking on Text-to-Video M
 
 
 ## 📢 News
-* **[Jan 2026]** 🎉 Code will be released soon 
-* **[Jan 2026]** 🎉 SceneSplit" has been accepted to **ICLR 2026**
+* **[Jan 2026]** 🎉 Code will be released soon.
+* **[Jan 2026]** 🎉 SceneSplit has been accepted to **ICLR 2026**.
 
 
 ## 🌟 Overview
