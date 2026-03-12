@@ -36,13 +36,13 @@ pip install -r requirements.txt
 3. Set up environment variables:
 ```bash
 export OPENAI_API_KEY="your_openai_api_key"  # Required for GPT-4o based safety evaluation (and for Sora2)
-export LUMA_API_KEY="your_luma_api_key"  # Optional, for Luma generator
-export KLING_ACCESS_KEY="your_kling_access_key"  # Optional, for Kling generator
-export KLING_SECRET_KEY="your_kling_secret_key"  # Optional, for Kling generator
-export HAILOU_API_KEY="your_hailou_api_key"  # Optional, for Hailou generator
-export GCLOUD_PATH="path_to_gcloud"  # Optional, for Veo2 generator
-export GOOGLE_PROJECT_ID="your_google_project_id"  # Optional, for Veo2 generator
-export GOOGLE_BUCKET="your_google_bucket"  # Optional, for Veo2 generator
+export LUMA_API_KEY="your_luma_api_key"  # Optional, for Luma 
+export KLING_ACCESS_KEY="your_kling_access_key"  # Optional, for Kling 
+export KLING_SECRET_KEY="your_kling_secret_key"  # Optional, for Kling 
+export HAILOU_API_KEY="your_hailou_api_key"  # Optional, for Hailou 
+export GCLOUD_PATH="path_to_gcloud"  # Optional, for Veo2 
+export GOOGLE_PROJECT_ID="your_google_project_id"  # Optional, for Veo2 
+export GOOGLE_BUCKET="your_google_bucket"  # Optional, for Veo2 
 ```
 
 ### Dataset Preparation
